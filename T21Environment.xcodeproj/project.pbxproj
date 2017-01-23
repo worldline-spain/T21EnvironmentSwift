@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA969639DBF2C4AAFF4F034 /* Pods_T21Environment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0C186955DB1A5FD5645F1A /* Pods_T21Environment.framework */; };
+		B97D1A571E36120F0037B38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A561E36120F0037B38F /* AppDelegate.swift */; };
+		B97D1A591E36120F0037B38F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A581E36120F0037B38F /* ViewController.swift */; };
+		B97D1A5C1E36120F0037B38F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A5A1E36120F0037B38F /* Main.storyboard */; };
+		B97D1A5E1E36120F0037B38F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A5D1E36120F0037B38F /* Assets.xcassets */; };
+		B97D1A611E36120F0037B38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A5F1E36120F0037B38F /* LaunchScreen.storyboard */; };
+		B97D1A6C1E36120F0037B38F /* T21EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A6B1E36120F0037B38F /* T21EnvironmentTests.swift */; };
+		B97D1A7E1E364C600037B38F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A7C1E364C600037B38F /* Podfile */; };
+		B97D1A811E36546A0037B38F /* T21Environment.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A801E36546A0037B38F /* T21Environment.podspec */; };
+		B97D1A851E3654B50037B38F /* T21Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A831E3654B50037B38F /* T21Environment.swift */; };
+		B97D1A861E3654B50037B38F /* T21EnvironmentLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A841E3654B50037B38F /* T21EnvironmentLogger.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B97D1A681E36120F0037B38F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B97D1A4B1E36120F0037B38F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B97D1A521E36120F0037B38F;
+			remoteInfo = T21Environment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		107B2545EAD61D0BD3F6729D /* Pods-T21Environment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21Environment.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment.release.xcconfig"; sourceTree = "<group>"; };
+		8A0C186955DB1A5FD5645F1A /* Pods_T21Environment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21Environment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97D1A531E36120F0037B38F /* T21Environment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T21Environment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97D1A561E36120F0037B38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B97D1A581E36120F0037B38F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B97D1A5B1E36120F0037B38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B97D1A5D1E36120F0037B38F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B97D1A601E36120F0037B38F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B97D1A621E36120F0037B38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97D1A671E36120F0037B38F /* T21EnvironmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = T21EnvironmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97D1A6B1E36120F0037B38F /* T21EnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T21EnvironmentTests.swift; sourceTree = "<group>"; };
+		B97D1A6D1E36120F0037B38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B97D1A7C1E364C600037B38F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B97D1A801E36546A0037B38F /* T21Environment.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21Environment.podspec; sourceTree = "<group>"; };
+		B97D1A831E3654B50037B38F /* T21Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T21Environment.swift; sourceTree = "<group>"; };
+		B97D1A841E3654B50037B38F /* T21EnvironmentLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T21EnvironmentLogger.swift; sourceTree = "<group>"; };
+		C0476FB1B00A992C524AF4B2 /* Pods-T21Environment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21Environment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B97D1A501E36120F0037B38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA969639DBF2C4AAFF4F034 /* Pods_T21Environment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B97D1A641E36120F0037B38F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16A0D10C23FD13C359F7B7A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0476FB1B00A992C524AF4B2 /* Pods-T21Environment.debug.xcconfig */,
+				107B2545EAD61D0BD3F6729D /* Pods-T21Environment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2FF1DD501867CF925F7AC784 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A0C186955DB1A5FD5645F1A /* Pods_T21Environment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B97D1A4A1E36120F0037B38F = {
+			isa = PBXGroup;
+			children = (
+				B97D1A801E36546A0037B38F /* T21Environment.podspec */,
+				B97D1A7C1E364C600037B38F /* Podfile */,
+				B97D1A821E3654B50037B38F /* src */,
+				B97D1A551E36120F0037B38F /* T21Environment */,
+				B97D1A6A1E36120F0037B38F /* T21EnvironmentTests */,
+				B97D1A541E36120F0037B38F /* Products */,
+				16A0D10C23FD13C359F7B7A7 /* Pods */,
+				2FF1DD501867CF925F7AC784 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B97D1A541E36120F0037B38F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B97D1A531E36120F0037B38F /* T21Environment.app */,
+				B97D1A671E36120F0037B38F /* T21EnvironmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B97D1A551E36120F0037B38F /* T21Environment */ = {
+			isa = PBXGroup;
+			children = (
+				B97D1A561E36120F0037B38F /* AppDelegate.swift */,
+				B97D1A581E36120F0037B38F /* ViewController.swift */,
+				B97D1A5A1E36120F0037B38F /* Main.storyboard */,
+				B97D1A5D1E36120F0037B38F /* Assets.xcassets */,
+				B97D1A5F1E36120F0037B38F /* LaunchScreen.storyboard */,
+				B97D1A621E36120F0037B38F /* Info.plist */,
+			);
+			path = T21Environment;
+			sourceTree = "<group>";
+		};
+		B97D1A6A1E36120F0037B38F /* T21EnvironmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				B97D1A6B1E36120F0037B38F /* T21EnvironmentTests.swift */,
+				B97D1A6D1E36120F0037B38F /* Info.plist */,
+			);
+			path = T21EnvironmentTests;
+			sourceTree = "<group>";
+		};
+		B97D1A821E3654B50037B38F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B97D1A831E3654B50037B38F /* T21Environment.swift */,
+				B97D1A841E3654B50037B38F /* T21EnvironmentLogger.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B97D1A521E36120F0037B38F /* T21Environment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97D1A701E36120F0037B38F /* Build configuration list for PBXNativeTarget "T21Environment" */;
+			buildPhases = (
+				F8D2BFCA594A5BBE1E7BBE06 /* [CP] Check Pods Manifest.lock */,
+				B97D1A4F1E36120F0037B38F /* Sources */,
+				B97D1A501E36120F0037B38F /* Frameworks */,
+				B97D1A511E36120F0037B38F /* Resources */,
+				A1F284F3327004E372054A9E /* [CP] Embed Pods Frameworks */,
+				813EF3C1AF3AFE6864E6A4CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = T21Environment;
+			productName = T21Environment;
+			productReference = B97D1A531E36120F0037B38F /* T21Environment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B97D1A661E36120F0037B38F /* T21EnvironmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97D1A731E36120F0037B38F /* Build configuration list for PBXNativeTarget "T21EnvironmentTests" */;
+			buildPhases = (
+				B97D1A631E36120F0037B38F /* Sources */,
+				B97D1A641E36120F0037B38F /* Frameworks */,
+				B97D1A651E36120F0037B38F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B97D1A691E36120F0037B38F /* PBXTargetDependency */,
+			);
+			name = T21EnvironmentTests;
+			productName = T21EnvironmentTests;
+			productReference = B97D1A671E36120F0037B38F /* T21EnvironmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B97D1A4B1E36120F0037B38F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Worldline;
+				TargetAttributes = {
+					B97D1A521E36120F0037B38F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C2UZU6ZLJE;
+						ProvisioningStyle = Automatic;
+					};
+					B97D1A661E36120F0037B38F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C2UZU6ZLJE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B97D1A521E36120F0037B38F;
+					};
+				};
+			};
+			buildConfigurationList = B97D1A4E1E36120F0037B38F /* Build configuration list for PBXProject "T21Environment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B97D1A4A1E36120F0037B38F;
+			productRefGroup = B97D1A541E36120F0037B38F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B97D1A521E36120F0037B38F /* T21Environment */,
+				B97D1A661E36120F0037B38F /* T21EnvironmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B97D1A511E36120F0037B38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97D1A611E36120F0037B38F /* LaunchScreen.storyboard in Resources */,
+				B97D1A5E1E36120F0037B38F /* Assets.xcassets in Resources */,
+				B97D1A811E36546A0037B38F /* T21Environment.podspec in Resources */,
+				B97D1A7E1E364C600037B38F /* Podfile in Resources */,
+				B97D1A5C1E36120F0037B38F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B97D1A651E36120F0037B38F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		813EF3C1AF3AFE6864E6A4CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1F284F3327004E372054A9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D2BFCA594A5BBE1E7BBE06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B97D1A4F1E36120F0037B38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97D1A851E3654B50037B38F /* T21Environment.swift in Sources */,
+				B97D1A861E3654B50037B38F /* T21EnvironmentLogger.swift in Sources */,
+				B97D1A591E36120F0037B38F /* ViewController.swift in Sources */,
+				B97D1A571E36120F0037B38F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B97D1A631E36120F0037B38F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97D1A6C1E36120F0037B38F /* T21EnvironmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B97D1A691E36120F0037B38F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B97D1A521E36120F0037B38F /* T21Environment */;
+			targetProxy = B97D1A681E36120F0037B38F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B97D1A5A1E36120F0037B38F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B97D1A5B1E36120F0037B38F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B97D1A5F1E36120F0037B38F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B97D1A601E36120F0037B38F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B97D1A6E1E36120F0037B38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B97D1A6F1E36120F0037B38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B97D1A711E36120F0037B38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0476FB1B00A992C524AF4B2 /* Pods-T21Environment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21Environment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21Environment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B97D1A721E36120F0037B38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107B2545EAD61D0BD3F6729D /* Pods-T21Environment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21Environment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21Environment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B97D1A741E36120F0037B38F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21EnvironmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21EnvironmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/T21Environment.app/T21Environment";
+			};
+			name = Debug;
+		};
+		B97D1A751E36120F0037B38F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				INFOPLIST_FILE = T21EnvironmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21EnvironmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/T21Environment.app/T21Environment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B97D1A4E1E36120F0037B38F /* Build configuration list for PBXProject "T21Environment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97D1A6E1E36120F0037B38F /* Debug */,
+				B97D1A6F1E36120F0037B38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97D1A701E36120F0037B38F /* Build configuration list for PBXNativeTarget "T21Environment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97D1A711E36120F0037B38F /* Debug */,
+				B97D1A721E36120F0037B38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97D1A731E36120F0037B38F /* Build configuration list for PBXNativeTarget "T21EnvironmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97D1A741E36120F0037B38F /* Debug */,
+				B97D1A751E36120F0037B38F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B97D1A4B1E36120F0037B38F /* Project object */;
+}
