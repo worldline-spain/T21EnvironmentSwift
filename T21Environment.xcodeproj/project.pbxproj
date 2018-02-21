@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CA969639DBF2C4AAFF4F034 /* Pods_T21Environment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0C186955DB1A5FD5645F1A /* Pods_T21Environment.framework */; };
+		9FD24314203DB55F009807F8 /* T21EnvironmentSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */; };
 		B97D1A571E36120F0037B38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A561E36120F0037B38F /* AppDelegate.swift */; };
 		B97D1A591E36120F0037B38F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A581E36120F0037B38F /* ViewController.swift */; };
 		B97D1A5C1E36120F0037B38F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A5A1E36120F0037B38F /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		B97D1A611E36120F0037B38F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A5F1E36120F0037B38F /* LaunchScreen.storyboard */; };
 		B97D1A6C1E36120F0037B38F /* T21EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A6B1E36120F0037B38F /* T21EnvironmentTests.swift */; };
 		B97D1A7E1E364C600037B38F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A7C1E364C600037B38F /* Podfile */; };
-		B97D1A811E36546A0037B38F /* T21Environment.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B97D1A801E36546A0037B38F /* T21Environment.podspec */; };
 		B97D1A851E3654B50037B38F /* T21Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A831E3654B50037B38F /* T21Environment.swift */; };
 		B97D1A861E3654B50037B38F /* T21EnvironmentLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A841E3654B50037B38F /* T21EnvironmentLogger.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +33,7 @@
 /* Begin PBXFileReference section */
 		107B2545EAD61D0BD3F6729D /* Pods-T21Environment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21Environment.release.xcconfig"; path = "Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment.release.xcconfig"; sourceTree = "<group>"; };
 		8A0C186955DB1A5FD5645F1A /* Pods_T21Environment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_T21Environment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21EnvironmentSwift.podspec; sourceTree = "<group>"; };
 		B97D1A531E36120F0037B38F /* T21Environment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T21Environment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97D1A561E36120F0037B38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B97D1A581E36120F0037B38F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		B97D1A6B1E36120F0037B38F /* T21EnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T21EnvironmentTests.swift; sourceTree = "<group>"; };
 		B97D1A6D1E36120F0037B38F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B97D1A7C1E364C600037B38F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B97D1A801E36546A0037B38F /* T21Environment.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21Environment.podspec; sourceTree = "<group>"; };
 		B97D1A831E3654B50037B38F /* T21Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T21Environment.swift; sourceTree = "<group>"; };
 		B97D1A841E3654B50037B38F /* T21EnvironmentLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = T21EnvironmentLogger.swift; sourceTree = "<group>"; };
 		C0476FB1B00A992C524AF4B2 /* Pods-T21Environment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T21Environment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		B97D1A4A1E36120F0037B38F = {
 			isa = PBXGroup;
 			children = (
-				B97D1A801E36546A0037B38F /* T21Environment.podspec */,
+				9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */,
 				B97D1A7C1E364C600037B38F /* Podfile */,
 				B97D1A821E3654B50037B38F /* src */,
 				B97D1A551E36120F0037B38F /* T21Environment */,
@@ -230,8 +230,8 @@
 			files = (
 				B97D1A611E36120F0037B38F /* LaunchScreen.storyboard in Resources */,
 				B97D1A5E1E36120F0037B38F /* Assets.xcassets in Resources */,
-				B97D1A811E36546A0037B38F /* T21Environment.podspec in Resources */,
 				B97D1A7E1E364C600037B38F /* Podfile in Resources */,
+				9FD24314203DB55F009807F8 /* T21EnvironmentSwift.podspec in Resources */,
 				B97D1A5C1E36120F0037B38F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +267,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/T21LoggerSwift/T21LoggerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/T21Notifier/T21Notifier.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/T21LoggerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/T21Notifier.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -282,13 +289,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-T21Environment-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
