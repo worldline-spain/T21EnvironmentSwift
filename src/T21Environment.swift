@@ -220,7 +220,7 @@ public class T21Environment {
         return true
     }
     
-    private func availableLanguages() -> NSArray {
+    public func availableLanguages() -> NSArray {
         return self.environments["languages"] as! NSArray
     }
 }
