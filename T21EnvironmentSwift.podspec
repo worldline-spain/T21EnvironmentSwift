@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.source_files  = "src/**/*.{swift}"
   s.framework  = "Foundation", "UIKit"
   s.requires_arc = true
-
+  s.homepage= "https://github.com/worldline-spain/T21EnvironmentSwift"
+  s.license = "https://github.com/worldline-spain/T21EnvironmentSwift/blob/master/LICENSE"
   s.dependency "T21LoggerSwift", "~>1.2.0"
   s.dependency "T21Notifier", "~>1.0.0"
 
