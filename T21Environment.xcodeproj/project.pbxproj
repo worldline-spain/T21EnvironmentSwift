@@ -152,7 +152,6 @@
 				B97D1A501E36120F0037B38F /* Frameworks */,
 				B97D1A511E36120F0037B38F /* Resources */,
 				A1F284F3327004E372054A9E /* [CP] Embed Pods Frameworks */,
-				813EF3C1AF3AFE6864E6A4CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,21 +247,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		813EF3C1AF3AFE6864E6A4CD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-T21Environment/Pods-T21Environment-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A1F284F3327004E372054A9E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
