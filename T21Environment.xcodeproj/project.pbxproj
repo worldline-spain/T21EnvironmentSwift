@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA0A25B22B1406600B9E897 /* T21EnvironmentSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA0A25922B1406600B9E897 /* T21EnvironmentSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FA0A25E22B1406600B9E897 /* T21EnvironmentSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0A25722B1406600B9E897 /* T21EnvironmentSwift.framework */; };
+		3FA0A25F22B1406600B9E897 /* T21EnvironmentSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0A25722B1406600B9E897 /* T21EnvironmentSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3FA0A26422B1407300B9E897 /* T21Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A831E3654B50037B38F /* T21Environment.swift */; };
+		3FA0A26522B1407300B9E897 /* T21EnvironmentLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A841E3654B50037B38F /* T21EnvironmentLogger.swift */; };
 		9FD24314203DB55F009807F8 /* T21EnvironmentSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */; };
 		B97D1A571E36120F0037B38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A561E36120F0037B38F /* AppDelegate.swift */; };
 		B97D1A591E36120F0037B38F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A581E36120F0037B38F /* ViewController.swift */; };
@@ -20,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3FA0A25C22B1406600B9E897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B97D1A4B1E36120F0037B38F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA0A25622B1406600B9E897;
+			remoteInfo = T21EnvironmentSwift;
+		};
 		B97D1A681E36120F0037B38F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B97D1A4B1E36120F0037B38F /* Project object */;
@@ -29,7 +41,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3FA0A26022B1406600B9E897 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3FA0A25F22B1406600B9E897 /* T21EnvironmentSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3FA0A25722B1406600B9E897 /* T21EnvironmentSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = T21EnvironmentSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA0A25922B1406600B9E897 /* T21EnvironmentSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = T21EnvironmentSwift.h; sourceTree = "<group>"; };
+		3FA0A25A22B1406600B9E897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21EnvironmentSwift.podspec; sourceTree = "<group>"; };
 		B97D1A531E36120F0037B38F /* T21Environment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T21Environment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97D1A561E36120F0037B38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,10 +76,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3FA0A25422B1406600B9E897 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B97D1A501E36120F0037B38F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA0A25E22B1406600B9E897 /* T21EnvironmentSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FA0A25822B1406600B9E897 /* T21EnvironmentSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3FA0A25922B1406600B9E897 /* T21EnvironmentSwift.h */,
+				3FA0A25A22B1406600B9E897 /* Info.plist */,
+			);
+			path = T21EnvironmentSwift;
+			sourceTree = "<group>";
+		};
 		B97D1A4A1E36120F0037B38F = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +118,7 @@
 				B97D1A821E3654B50037B38F /* src */,
 				B97D1A551E36120F0037B38F /* T21Environment */,
 				B97D1A6A1E36120F0037B38F /* T21EnvironmentTests */,
+				3FA0A25822B1406600B9E897 /* T21EnvironmentSwift */,
 				B97D1A541E36120F0037B38F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +128,7 @@
 			children = (
 				B97D1A531E36120F0037B38F /* T21Environment.app */,
 				B97D1A671E36120F0037B38F /* T21EnvironmentTests.xctest */,
+				3FA0A25722B1406600B9E897 /* T21EnvironmentSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +166,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3FA0A25222B1406600B9E897 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA0A25B22B1406600B9E897 /* T21EnvironmentSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		3FA0A25622B1406600B9E897 /* T21EnvironmentSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA0A26322B1406600B9E897 /* Build configuration list for PBXNativeTarget "T21EnvironmentSwift" */;
+			buildPhases = (
+				3FA0A25222B1406600B9E897 /* Headers */,
+				3FA0A25322B1406600B9E897 /* Sources */,
+				3FA0A25422B1406600B9E897 /* Frameworks */,
+				3FA0A25522B1406600B9E897 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = T21EnvironmentSwift;
+			productName = T21EnvironmentSwift;
+			productReference = 3FA0A25722B1406600B9E897 /* T21EnvironmentSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B97D1A521E36120F0037B38F /* T21Environment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B97D1A701E36120F0037B38F /* Build configuration list for PBXNativeTarget "T21Environment" */;
@@ -126,10 +203,12 @@
 				B97D1A4F1E36120F0037B38F /* Sources */,
 				B97D1A501E36120F0037B38F /* Frameworks */,
 				B97D1A511E36120F0037B38F /* Resources */,
+				3FA0A26022B1406600B9E897 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3FA0A25D22B1406600B9E897 /* PBXTargetDependency */,
 			);
 			name = T21Environment;
 			productName = T21Environment;
@@ -164,6 +243,11 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Worldline;
 				TargetAttributes = {
+					3FA0A25622B1406600B9E897 = {
+						CreatedOnToolsVersion = 11.0;
+						DevelopmentTeam = C2UZU6ZLJE;
+						ProvisioningStyle = Automatic;
+					};
 					B97D1A521E36120F0037B38F = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = C2UZU6ZLJE;
@@ -184,6 +268,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -194,11 +279,19 @@
 			targets = (
 				B97D1A521E36120F0037B38F /* T21Environment */,
 				B97D1A661E36120F0037B38F /* T21EnvironmentTests */,
+				3FA0A25622B1406600B9E897 /* T21EnvironmentSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3FA0A25522B1406600B9E897 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B97D1A511E36120F0037B38F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,6 +314,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3FA0A25322B1406600B9E897 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA0A26422B1407300B9E897 /* T21Environment.swift in Sources */,
+				3FA0A26522B1407300B9E897 /* T21EnvironmentLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B97D1A4F1E36120F0037B38F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +345,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3FA0A25D22B1406600B9E897 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA0A25622B1406600B9E897 /* T21EnvironmentSwift */;
+			targetProxy = 3FA0A25C22B1406600B9E897 /* PBXContainerItemProxy */;
+		};
 		B97D1A691E36120F0037B38F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B97D1A521E36120F0037B38F /* T21Environment */;
@@ -270,6 +377,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3FA0A26122B1406600B9E897 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = T21EnvironmentSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21EnvironmentSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA0A26222B1406600B9E897 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C2UZU6ZLJE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = T21EnvironmentSwift/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tempos21.T21EnvironmentSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		B97D1A6E1E36120F0037B38F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -384,6 +552,7 @@
 		B97D1A711E36120F0037B38F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C2UZU6ZLJE;
 				INFOPLIST_FILE = T21Environment/Info.plist;
@@ -398,6 +567,7 @@
 		B97D1A721E36120F0037B38F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C2UZU6ZLJE;
 				INFOPLIST_FILE = T21Environment/Info.plist;
@@ -444,6 +614,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3FA0A26322B1406600B9E897 /* Build configuration list for PBXNativeTarget "T21EnvironmentSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA0A26122B1406600B9E897 /* Debug */,
+				3FA0A26222B1406600B9E897 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B97D1A4E1E36120F0037B38F /* Build configuration list for PBXProject "T21Environment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
