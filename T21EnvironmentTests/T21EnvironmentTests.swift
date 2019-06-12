@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import T21Environment
+@testable import T21EnvironmentSwift
 
 class T21EnvironmentTests: XCTestCase {
     

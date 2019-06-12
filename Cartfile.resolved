@@ -1,0 +1,3 @@
+github "SwiftyBeaver/SwiftyBeaver" "1.7.0"
+github "worldline-spain/T21LoggerSwift" "2.0.0"
+github "worldline-spain/T21Notifier-iOS" "2.0.2"
