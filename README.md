@@ -1,10 +1,51 @@
-#T21Environment
 
-This class provides helper methods to deal with app deployment related stuff, such as **build configuration dependent variables** and also, **language runtime** management support.
+# T21Environment
+> Helper methods to deal with deployment related stuff.
+
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage)
+[![CocoaPods compatible](https://img.shields.io/badge/pod-2.0.0-informational.svg)](http://cocoapods.org/pods/Swinject)
+[![Swift compatible](https://img.shields.io/badge/Swift-5.0-orange.svg)]()
+[![Platform compatible](https://img.shields.io/badge/platform-iOS-lightgrey.svg)]()
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)]()
+
+This class provides helper methods to deal with app deployment related stuff, such as build configuration dependent variables and also, language runtime management support.
 
 iOS manages natively the app language but this class offers the possibility of changing the language inside an app (in runtime), setting a different language than the current one in the OS. It is known this shouldn't be the standard approach, but we found some clients with this requirements.
- 
-## Version 1.0.0
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## Installation
+
+T21Environment is available through [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org).
+
+### Carthage
+
+To install T21Environment with Carthage, add the following line to your `Cartfile`.
+
+```
+github "worldline-spain/T21EnvironmentSwift"
+```
+
+Then run `carthage update --no-use-binaries` command or just `carthage update`. For details of the installation and usage of Carthage, visit [its project page](https://github.com/Carthage/Carthage).
+
+
+### CocoaPods
+
+To install T21Environment with CocoaPods, add the following lines to your `Podfile`.
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0' 
+use_frameworks!
+
+pod 'T21EnvironmentSwift'
+```
+
+Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
+
+## How to use
 
 ### Configuring your project
 
@@ -43,24 +84,24 @@ An easy way to configure the environments is using a JSON file which follows the
 
 ```
 {
-    "languages": ["en","es","ca"],
-    "configurations": {
-        "appstore" : {
-            "base_url" : "www.app.com/appstore"
-        },
-        "Debug" : {
-            "base_url" : "www.app.com/devel"
-        },
-        "pro" : {
-            "base_url" : "www.app.com/pro"
-        },
-        "test" : {
-            "base_url" : "www.app.com/test"
-        },
-        "Release" : {
-            "base_url" : "www.app.com/uat"
-        }
-    }
+	"languages": ["en","es","ca"],
+	"configurations": {
+		"appstore" : {
+			"base_url" : "www.app.com/appstore"
+		},
+		"Debug" : {
+			"base_url" : "www.app.com/devel"
+		},
+		"pro" : {
+			"base_url" : "www.app.com/pro"
+		},
+		"test" : {
+			"base_url" : "www.app.com/test"
+		},
+		"Release" : {
+			"base_url" : "www.app.com/uat"
+		}
+	}
 }
 ```
 
@@ -78,7 +119,7 @@ And the `base_url` variable which changes depending of the build configuration.
 
 First we need to create the `T21Environment` class. The constructor receives a Dictionary<String,Any> in this case loaded from the `environments.json` file.
 
-```
+```swift
 let environmentsFilePath = Bundle.main.path(forResource: "environments", ofType: "json")
 
 if let path = environmentsFilePath {
@@ -86,14 +127,14 @@ if let path = environmentsFilePath {
 	do {
 		let jsonData = try Data(contentsOf: url)
 		let j = try JSONSerialization.jsonObject(with: jsonData, options: [])
-        if let json = j as? Dictionary<String,Any> {
-            environment = T21Environment(json)
-        } else {
-        	  //manage error
-        }
-    } catch {
-	    //manage error
-    }
+		if let json = j as? Dictionary<String,Any> {
+			environment = T21Environment(json)
+		} else {
+			// manage error
+		}
+	} catch {
+		// manage error
+	}
 }
 
 ```
@@ -102,13 +143,13 @@ if let path = environmentsFilePath {
 
 Let's assume we are using the previous json file. To get the `base_url` value it's as simple as this.
 
-```
+```swift
 let baseURL: String? = environment.configuration()["base_url"] as? String
 ```
 
 Of course you can omit the optional stuff or create a Facade class, up to you.
 
-```
+```swift
 let baseURL = environment.configuration()["base_url"] as! String
 ```
 
@@ -116,15 +157,14 @@ let baseURL = environment.configuration()["base_url"] as! String
 
 When the T21Environment class is initialized it fetches the preferred language of the device and tries to use it, if it's available (it checks againts the array of languages). If everything is properly configured, using a language is as simple as:
 
-```
-//assume our iOS Device is using spanish language.
+```swift
+// Assume our iOS Device is using spanish language.
 
 var helloString = environment.localizedString("hello") // helloString -> "Hola"
 
-environment.setAppLanguage("en") //switch to english language
+environment.setAppLanguage("en") // switch to english language
 
 helloString = environment.localizedString("hello") // helloString -> "Hello"
-
 ```
 
 The language is automatically stored, so next time app starts will use the previous language used.
@@ -153,7 +193,7 @@ Clients can subscribe to language change notifications. Very useful when updatin
 
 ```
 public protocol T21EnvironmentNotifications : class {
-    func languageUpdated( _ language: String)
+	func languageUpdated( _ language: String)
 }
 
 public func addEnvironmentObserver( _ observer: T21EnvironmentNotifications)
@@ -189,3 +229,27 @@ let decryptor = RNCryptor.DecryptorV3(password: "XXXXXXXXXX")
 let jsonData = try decryptor.decrypt(data: data)
 let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
 ```
+
+## Built With
+
+* [T21Notifier](https://github.com/worldline-spain/T21Notifier-iOS) - Custom NotificationCenter that forces observers to implement a concrete Protocol, useful to add a bit of order on the Notification receivers.
+* [T21Logger](https://github.com/worldline-spain/T21LoggerSwift ) - Wrapper class for the SwiftyBeaver public third party logger library.
+
+## Authors
+
+* **Eloi Guzman Ceron** - *Initial work* 
+* **Edwin Peña** - *Initial work*
+* **Salvador Martin** - *Initial work*
+* **Patricia De la Rica** - *Carthage integration*
+* **Marcos Molero** - *Carthage integration* 
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* To Worldline iOS Dev Team.
+
