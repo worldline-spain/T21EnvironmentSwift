@@ -24,5 +24,13 @@ DerivedData
 Pods
 Podfile.lock
 
+Carthage/
+
+# Swift Package Manager
+Packages/
+Package.pins
+Package.resolved
+.build/
+
 #svn
 .svn
