@@ -21,6 +21,7 @@
 		3FA0A26E22B1413900B9E897 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0A26822B1410900B9E897 /* SwiftyBeaver.framework */; };
 		3FA0A26F22B1413900B9E897 /* T21LoggerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0A26722B1410900B9E897 /* T21LoggerSwift.framework */; };
 		3FA0A27022B1413900B9E897 /* T21Notifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA0A26922B1410A00B9E897 /* T21Notifier.framework */; };
+		3FA1668522B248E900AACA98 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA1668422B248E900AACA98 /* Package.swift */; };
 		9FD24314203DB55F009807F8 /* T21EnvironmentSwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */; };
 		B97D1A571E36120F0037B38F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A561E36120F0037B38F /* AppDelegate.swift */; };
 		B97D1A591E36120F0037B38F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D1A581E36120F0037B38F /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 		3FA0A26722B1410900B9E897 /* T21LoggerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = T21LoggerSwift.framework; path = Carthage/Build/iOS/T21LoggerSwift.framework; sourceTree = "<group>"; };
 		3FA0A26822B1410900B9E897 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		3FA0A26922B1410A00B9E897 /* T21Notifier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = T21Notifier.framework; path = Carthage/Build/iOS/T21Notifier.framework; sourceTree = "<group>"; };
+		3FA1668422B248E900AACA98 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = T21EnvironmentSwift.podspec; sourceTree = "<group>"; };
 		B97D1A531E36120F0037B38F /* T21Environment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T21Environment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B97D1A561E36120F0037B38F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		B97D1A4A1E36120F0037B38F = {
 			isa = PBXGroup;
 			children = (
+				3FA1668422B248E900AACA98 /* Package.swift */,
 				9FD24313203DB55F009807F8 /* T21EnvironmentSwift.podspec */,
 				B97D1A7C1E364C600037B38F /* Podfile */,
 				B97D1A821E3654B50037B38F /* src */,
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B97D1A851E3654B50037B38F /* T21Environment.swift in Sources */,
+				3FA1668522B248E900AACA98 /* Package.swift in Sources */,
 				B97D1A861E3654B50037B38F /* T21EnvironmentLogger.swift in Sources */,
 				B97D1A591E36120F0037B38F /* ViewController.swift in Sources */,
 				B97D1A571E36120F0037B38F /* AppDelegate.swift in Sources */,
