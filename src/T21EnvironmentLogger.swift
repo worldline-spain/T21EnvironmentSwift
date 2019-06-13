@@ -33,5 +33,5 @@ public class T21EnvironmentLogger {
     }
     
     //MARK: Private methods
-    private static let sharedInstance = T21Logger.T21Logger("ENVIRONMENT")
+    private static let sharedInstance = T21Logger("ENVIRONMENT")
 }
