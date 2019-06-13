@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import T21LoggerSwift
+import T21Logger
 
 public class T21EnvironmentLogger {
     
